@@ -25,9 +25,11 @@ try:
     import json
 except ImportError:
     import simplejson as json
-import web.http as openerpweb
-from web.controllers.main import ExcelExport
-from web.controllers.main import Export
+#import web.http as openerpweb
+#from BaseHTTPServer import BaseHTTPRequestHandler as openerpweb
+import openerp.addons.web.http as openerpweb
+from openerp.addons.web.controllers.main import ExcelExport
+from openerp.addons.web.controllers.main import Export
 import re
 from cStringIO import StringIO
 from lxml  import etree
